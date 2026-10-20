@@ -1,3 +1,5 @@
+import { Platform } from 'react-native';
+
 export type LandingCategory = 'CME' | 'GSI' | 'AHS' | 'Conference';
 
 export interface SectionImageAsset {
@@ -32,7 +34,11 @@ export interface MobileEventGatewayPort {
 export class GhaSpringCloudGatewayAdapter implements MobileEventGatewayPort {
   private readonly gatewayBaseUrl: string;
 
-  constructor(gatewayBaseUrl = process.env.EXPO_PUBLIC_GHA_GATEWAY_URL || 'http://10.0.2.2:8080') {
+  constructor(
+    gatewayBaseUrl =
+      process.env.EXPO_PUBLIC_GHA_GATEWAY_URL ||
+      (Platform.OS === 'android' ? 'http://10.0.2.2:8080' : 'http://localhost:8080')
+  ) {
     this.gatewayBaseUrl = gatewayBaseUrl.replace(/\/+$/, '');
   }
 
