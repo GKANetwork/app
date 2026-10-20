@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import * as SecureStore from 'expo-secure-store';
 import {
   SafeAreaView,
   ScrollView,
@@ -12,11 +13,14 @@ import {
   Modal,
   Linking,
 } from 'react-native';
+import LoginScreen from './src/auth/LoginScreen';
 import {
   GhaSpringCloudGatewayAdapter,
   LandingCategory,
   MobileLandingSection,
 } from './src/api/eventGatewayClient';
+import { userGatewayClient } from './src/api/userGatewayClient';
+import type { AuthenticatedUser } from './src/api/userGatewayClient';
 
 const CATEGORIES: Array<{ code: 'ALL' | LandingCategory; label: string }> = [
   { code: 'ALL', label: 'All' },
@@ -37,6 +41,36 @@ export default function App() {
   const [inAppBrowserSection, setInAppBrowserSection] = useState<MobileLandingSection | null>(
     null
   );
+  const [sessionReady, setSessionReady] = useState(false);
+  const [user, setUser] = useState<AuthenticatedUser | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    const restoreSession = async () => {
+      try {
+        const token = await SecureStore.getItemAsync('gha.session.token');
+        if (!token) return;
+        const restoredUser = await userGatewayClient.getSession(token);
+        if (active) setUser(restoredUser);
+      } catch {
+        await SecureStore.deleteItemAsync('gha.session.token');
+      } finally {
+        if (active) setSessionReady(true);
+      }
+    };
+    restoreSession();
+    return () => { active = false; };
+  }, []);
+
+  const saveSession = async (authenticatedUser: AuthenticatedUser, token: string) => {
+    await SecureStore.setItemAsync('gha.session.token', token);
+    setUser(authenticatedUser);
+  };
+
+  const logout = async () => {
+    await SecureStore.deleteItemAsync('gha.session.token');
+    setUser(null);
+  };
 
   const loadPublishedSections = async () => {
     try {
@@ -52,9 +86,10 @@ export default function App() {
   };
 
   useEffect(() => {
+    if (!user) return;
     setLoading(true);
     loadPublishedSections();
-  }, [selectedCategory]);
+  }, [selectedCategory, user?.id]);
 
   const cycleSectionImage = (sectionId: string, totalImages: number) => {
     if (totalImages <= 1) return;
@@ -74,12 +109,32 @@ export default function App() {
     }
   };
 
+  if (!sessionReady) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.centerBox}><ActivityIndicator size="large" color="#0f172a" /></View>
+      </SafeAreaView>
+    );
+  }
+
+  if (!user) return <LoginScreen onAuthenticated={saveSession} />;
+
   return (
     <SafeAreaView style={styles.container}>
       {/* App Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Global Health Academy</Text>
-        <Text style={styles.headerSubtitle}>CME · GSI · Course / AHS · Conferences</Text>
+        <View style={styles.headerRow}>
+          <View style={styles.headerCopy}>
+            <Text style={styles.headerTitle}>Global Health Academy</Text>
+            <Text style={styles.headerSubtitle}>CME · GSI · Course / AHS · Conferences</Text>
+          </View>
+          <View style={styles.headerAccount}>
+            <Text style={styles.headerWelcome} numberOfLines={1}>{user.name}</Text>
+            <TouchableOpacity onPress={logout} style={styles.logoutButton} accessibilityRole="button" accessibilityLabel="Sign out">
+              <Text style={styles.logoutIcon}>↪</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
 
       {/* Category Filter Tabs */}
@@ -236,8 +291,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#f8fafc' },
   header: { backgroundColor: '#0f172a', paddingHorizontal: 20, paddingVertical: 16 },
+  headerRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  headerCopy: { flex: 1, paddingRight: 10 },
+  headerAccount: { alignItems: 'center', justifyContent: 'center', minWidth: 54, maxWidth: 110 },
   headerTitle: { color: '#ffffff', fontSize: 18, fontWeight: '700' },
-  headerSubtitle: { color: '#94a3b8', fontSize: 12, marginTop: 2 },
+  headerWelcome: { color: '#f8fafc', fontSize: 16, fontWeight: '700', marginBottom: 3 },
+  headerSubtitle: { color: '#cbd5e1', fontSize: 12, marginTop: 2 },
+  logoutButton: { width: 42, height: 42, alignItems: 'center', justifyContent: 'center', borderRadius: 21, borderWidth: 1, borderColor: '#64748b' },
+  logoutIcon: { color: '#f8fafc', fontSize: 24, fontWeight: '700', transform: [{ scaleX: -1 }] },
   filterBar: { backgroundColor: '#f1f5f9', paddingVertical: 10, paddingHorizontal: 12 },
   filterTab: { paddingHorizontal: 14, paddingVertical: 7, borderRadius: 8, marginRight: 8 },
   filterTabActive: { backgroundColor: '#0f172a' },

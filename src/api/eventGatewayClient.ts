@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import { getGatewayBaseUrl } from './gatewayConfig';
 
 export type LandingCategory = 'CME' | 'GSI' | 'AHS' | 'Conference';
 
@@ -34,11 +34,7 @@ export interface MobileEventGatewayPort {
 export class GhaSpringCloudGatewayAdapter implements MobileEventGatewayPort {
   private readonly gatewayBaseUrl: string;
 
-  constructor(
-    gatewayBaseUrl =
-      process.env.EXPO_PUBLIC_GHA_GATEWAY_URL ||
-      (Platform.OS === 'android' ? 'http://10.0.2.2:8080' : 'http://localhost:8080')
-  ) {
+  constructor(gatewayBaseUrl = getGatewayBaseUrl()) {
     this.gatewayBaseUrl = gatewayBaseUrl.replace(/\/+$/, '');
   }
 
