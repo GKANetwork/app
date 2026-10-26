@@ -207,3 +207,418 @@
 {"_e":"metro:config","_t":1792472092680,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
 {"_e":"expo:dev-tools-plugin:load","_t":1792472092774,"plugins":[]}
 {"_e":"metro:instantiate","_t":1792472092968,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1792676891859,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792676891859,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792676891861,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.12:8080"}}
+{"_e":"devserver:start","_t":1792676892010,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792676892194,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792676892273,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792676892577,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1792676993698,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792676993700,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792676993704,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792676994028,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1792676994136,"id":"1","progress":0.09,"total":6,"current":3}
+{"_e":"metro:bundling:progress","_t":1792676994237,"id":"1","progress":0.09,"total":107,"current":4}
+{"_e":"metro:bundling:progress","_t":1792676994337,"id":"1","progress":0.09,"total":131,"current":14}
+{"_e":"metro:bundling:progress","_t":1792676994437,"id":"1","progress":0.09,"total":146,"current":24}
+{"_e":"metro:bundling:progress","_t":1792676994537,"id":"1","progress":0.09,"total":173,"current":38}
+{"_e":"metro:bundling:progress","_t":1792676994637,"id":"1","progress":0.15926689672586483,"total":218,"current":87}
+{"_e":"metro:bundling:progress","_t":1792676994737,"id":"1","progress":0.279605092904094,"total":278,"current":147}
+{"_e":"metro:bundling:progress","_t":1792676994837,"id":"1","progress":0.34422299442012766,"total":346,"current":203}
+{"_e":"metro:bundling:progress","_t":1792676994937,"id":"1","progress":0.38666932927929093,"total":394,"current":245}
+{"_e":"metro:bundling:progress","_t":1792676995038,"id":"1","progress":0.41105774985755256,"total":457,"current":293}
+{"_e":"metro:bundling:progress","_t":1792676995138,"id":"1","progress":0.5897203083551424,"total":474,"current":364}
+{"_e":"metro:bundling:progress","_t":1792676995238,"id":"1","progress":0.7284889221191406,"total":512,"current":437}
+{"_e":"metro:bundling:progress","_t":1792676995338,"id":"1","progress":0.7869911567736376,"total":567,"current":503}
+{"_e":"metro:bundling:progress","_t":1792676995438,"id":"1","progress":0.8168802202365728,"total":603,"current":545}
+{"_e":"metro:bundling:progress","_t":1792676995538,"id":"1","progress":0.8332842353337261,"total":654,"current":597}
+{"_e":"metro:bundling:progress","_t":1792676995639,"id":"1","progress":0.9112840817253998,"total":683,"current":652}
+{"_e":"metro:bundling:progress","_t":1792676995738,"id":"1","progress":0.9829062977767136,"total":699,"current":693}
+{"_e":"metro:bundling:progress","_t":1792676995839,"id":"1","progress":0.9942938775510204,"total":700,"current":698}
+{"_e":"metro:bundling:progress","_t":1792676995971,"id":"1","progress":0.9971448979591836,"total":700,"current":699}
+{"_e":"metro:bundling:progress","_t":1792676996072,"id":"1","progress":0.9971570732220579,"total":703,"current":702}
+{"_e":"metro:bundling:progress","_t":1792676996137,"id":"1","progress":0.999,"total":703,"current":703}
+{"_e":"metro:bundling:progress","_t":1792676996238,"id":"1","progress":0.999,"total":714,"current":714}
+{"_e":"metro:bundling:done","_t":1792676996284,"id":"1","total":714,"ms":2583.931792}
+{"_e":"metro:client_log","_t":1792676996583,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"root:init","_t":1792677127691,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792677127691,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792677127692,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.12:8080"}}
+{"_e":"devserver:start","_t":1792677127804,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792677127981,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792677128072,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792677128293,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1792677755156,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792677755157,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792677755158,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.12:8080"}}
+{"_e":"devserver:start","_t":1792677755279,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792677755470,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792677755582,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792677755770,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1792677839585,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792677839585,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792677839589,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792677839913,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1792677840015,"id":"1","progress":0.04000000000000001,"total":4,"current":2}
+{"_e":"metro:bundling:progress","_t":1792677840114,"id":"1","progress":0.18367346938775508,"total":14,"current":6}
+{"_e":"metro:bundling:progress","_t":1792677840215,"id":"1","progress":0.3832199546485261,"total":21,"current":13}
+{"_e":"metro:bundling:progress","_t":1792677840315,"id":"1","progress":0.3832199546485261,"total":83,"current":33}
+{"_e":"metro:bundling:progress","_t":1792677840417,"id":"1","progress":0.3832199546485261,"total":95,"current":52}
+{"_e":"metro:bundling:progress","_t":1792677840517,"id":"1","progress":0.535065157750343,"total":108,"current":79}
+{"_e":"metro:bundling:progress","_t":1792677840616,"id":"1","progress":0.535065157750343,"total":236,"current":102}
+{"_e":"metro:bundling:progress","_t":1792677840716,"id":"1","progress":0.535065157750343,"total":261,"current":128}
+{"_e":"metro:bundling:progress","_t":1792677840817,"id":"1","progress":0.535065157750343,"total":283,"current":142}
+{"_e":"metro:bundling:progress","_t":1792677840918,"id":"1","progress":0.535065157750343,"total":342,"current":196}
+{"_e":"metro:bundling:progress","_t":1792677841020,"id":"1","progress":0.535065157750343,"total":435,"current":257}
+{"_e":"metro:bundling:progress","_t":1792677841120,"id":"1","progress":0.535065157750343,"total":516,"current":324}
+{"_e":"metro:bundling:progress","_t":1792677841221,"id":"1","progress":0.535065157750343,"total":565,"current":384}
+{"_e":"metro:bundling:progress","_t":1792677841324,"id":"1","progress":0.5462056026029091,"total":594,"current":439}
+{"_e":"metro:bundling:progress","_t":1792677841424,"id":"1","progress":0.6840612184613418,"total":613,"current":507}
+{"_e":"metro:bundling:progress","_t":1792677841524,"id":"1","progress":0.8074746702816631,"total":641,"current":576}
+{"_e":"metro:bundling:progress","_t":1792677841624,"id":"1","progress":0.9240051439118161,"total":671,"current":645}
+{"_e":"metro:bundling:progress","_t":1792677841724,"id":"1","progress":0.9772411435916014,"total":699,"current":691}
+{"_e":"metro:bundling:progress","_t":1792677841825,"id":"1","progress":0.9942938775510204,"total":700,"current":698}
+{"_e":"metro:bundling:progress","_t":1792677842025,"id":"1","progress":0.9971448979591836,"total":700,"current":699}
+{"_e":"metro:bundling:progress","_t":1792677842126,"id":"1","progress":0.999,"total":714,"current":714}
+{"_e":"metro:bundling:done","_t":1792677842197,"id":"1","total":714,"ms":2611.903458}
+{"_e":"metro:client_log","_t":1792677843270,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:server_log","_t":1792678335836,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792679596389,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792681506310,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:bundling:started","_t":1792681945358,"id":"2","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792681945359,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792681945394,"id":"2","total":1,"ms":35.444791}
+{"_e":"metro:client_log","_t":1792681945635,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792681960703,"level":"error","data":["[GHA-MOBILE] Session restore failed:","[Error: Gateway request timed out after 15 seconds (/api/v1/auth/session)]"]}
+{"_e":"metro:client_log","_t":1792682063357,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: LearnWorlds returned no SSO login URL]"]}
+{"_e":"metro:bundling:started","_t":1792682078746,"id":"6","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792682078746,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792682078784,"id":"6","total":1,"ms":37.990833}
+{"_e":"metro:client_log","_t":1792682078975,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:bundling:started","_t":1792682084920,"id":"7","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792682084920,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792682084960,"id":"7","total":1,"ms":40.234959}
+{"_e":"metro:client_log","_t":1792682085144,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"root:init","_t":1792683467352,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792683467352,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792683467353,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.12:8080","EXPO_PUBLIC_LEARNWORLDS_REGISTRATION_URL":"https://courses.globalhealthcareacademy.in/home"}}
+{"_e":"devserver:start","_t":1792683467473,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792683467658,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792683467763,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792683468045,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1792727740964,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792727740964,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792727740966,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.12:8080","EXPO_PUBLIC_LEARNWORLDS_REGISTRATION_URL":"https://courses.globalhealthcareacademy.in/home"}}
+{"_e":"devserver:start","_t":1792727741099,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792727741293,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792727741402,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792727741625,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1792727828869,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792727828870,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792727828872,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.12:8080","EXPO_PUBLIC_LEARNWORLDS_REGISTRATION_URL":"https://courses.globalhealthcareacademy.in/home"}}
+{"_e":"devserver:start","_t":1792727829006,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792727829185,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792727829271,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792727829461,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1792727865347,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792727865348,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792727865353,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792727865685,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1792727865785,"id":"1","progress":0.03393351800554016,"total":38,"current":7}
+{"_e":"metro:bundling:progress","_t":1792727865885,"id":"1","progress":0.15311909262759926,"total":46,"current":18}
+{"_e":"metro:bundling:progress","_t":1792727865986,"id":"1","progress":0.43503847894975095,"total":47,"current":31}
+{"_e":"metro:bundling:progress","_t":1792727866086,"id":"1","progress":0.6663890045814245,"total":49,"current":40}
+{"_e":"metro:bundling:progress","_t":1792727866186,"id":"1","progress":0.6663890045814245,"total":76,"current":49}
+{"_e":"metro:bundling:progress","_t":1792727866288,"id":"1","progress":0.6663890045814245,"total":94,"current":58}
+{"_e":"metro:bundling:progress","_t":1792727866387,"id":"1","progress":0.6663890045814245,"total":210,"current":91}
+{"_e":"metro:bundling:progress","_t":1792727866488,"id":"1","progress":0.6663890045814245,"total":236,"current":114}
+{"_e":"metro:bundling:progress","_t":1792727866587,"id":"1","progress":0.6663890045814245,"total":284,"current":159}
+{"_e":"metro:bundling:progress","_t":1792727866687,"id":"1","progress":0.6663890045814245,"total":334,"current":211}
+{"_e":"metro:bundling:progress","_t":1792727866790,"id":"1","progress":0.6663890045814245,"total":381,"current":255}
+{"_e":"metro:bundling:progress","_t":1792727866890,"id":"1","progress":0.6663890045814245,"total":447,"current":324}
+{"_e":"metro:bundling:progress","_t":1792727866990,"id":"1","progress":0.6663890045814245,"total":476,"current":365}
+{"_e":"metro:bundling:progress","_t":1792727867090,"id":"1","progress":0.7332281544695041,"total":501,"current":429}
+{"_e":"metro:bundling:progress","_t":1792727867191,"id":"1","progress":0.760185407986221,"total":562,"current":490}
+{"_e":"metro:bundling:progress","_t":1792727867290,"id":"1","progress":0.760185407986221,"total":628,"current":546}
+{"_e":"metro:bundling:progress","_t":1792727867390,"id":"1","progress":0.8072750229568411,"total":660,"current":593}
+{"_e":"metro:bundling:progress","_t":1792727867490,"id":"1","progress":0.8939855674441102,"total":679,"current":642}
+{"_e":"metro:bundling:progress","_t":1792727867591,"id":"1","progress":0.9546159087213287,"total":697,"current":681}
+{"_e":"metro:bundling:progress","_t":1792727867692,"id":"1","progress":0.9942938775510204,"total":700,"current":698}
+{"_e":"metro:bundling:progress","_t":1792727867920,"id":"1","progress":0.9971448979591836,"total":700,"current":699}
+{"_e":"metro:bundling:progress","_t":1792727868034,"id":"1","progress":0.999,"total":703,"current":703}
+{"_e":"metro:bundling:progress","_t":1792727868135,"id":"1","progress":0.999,"total":714,"current":714}
+{"_e":"metro:bundling:done","_t":1792727868178,"id":"1","total":714,"ms":2831.273833}
+{"_e":"metro:client_log","_t":1792727868447,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792727875594,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792727875597,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:bundling:started","_t":1792734485979,"id":"4","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792734485981,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792734486128,"id":"4","total":1,"ms":147.003041}
+{"_e":"metro:client_log","_t":1792734486527,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792736496223,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792736496244,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:server_log","_t":1792774256288,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792776296245,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792778379231,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792780277199,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792781622319,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792783619222,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792785526361,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792787503328,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792789414405,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792790516377,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792791516205,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792793499107,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792794814078,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792795442100,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792796424144,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792798575096,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792800493084,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792802074089,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792803061151,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792804979139,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792806707160,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792808581169,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792810270260,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792811215178,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792812160161,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792812391149,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792812875714,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"metro:server_log","_t":1792813189693,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17e","60"]}
+{"_e":"root:init","_t":1792816875984,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792816875985,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792816875987,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.241:8080","EXPO_PUBLIC_LEARNWORLDS_REGISTRATION_URL":"https://courses.globalhealthcareacademy.in/home"}}
+{"_e":"devserver:start","_t":1792816876136,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792816876368,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792816876503,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792816876847,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1792816886715,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792816886715,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792816886719,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792816887037,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1792816887139,"id":"1","progress":0.12755102040816327,"total":14,"current":5}
+{"_e":"metro:bundling:progress","_t":1792816887347,"id":"1","progress":0.18367346938775508,"total":14,"current":6}
+{"_e":"metro:bundling:progress","_t":1792816887447,"id":"1","progress":0.18367346938775508,"total":43,"current":12}
+{"_e":"metro:bundling:progress","_t":1792816887552,"id":"1","progress":0.21006944444444442,"total":48,"current":22}
+{"_e":"metro:bundling:progress","_t":1792816887652,"id":"1","progress":0.5067509336397586,"total":59,"current":42}
+{"_e":"metro:bundling:progress","_t":1792816887753,"id":"1","progress":0.5067509336397586,"total":83,"current":57}
+{"_e":"metro:bundling:progress","_t":1792816887854,"id":"1","progress":0.5161655198416439,"total":103,"current":74}
+{"_e":"metro:bundling:progress","_t":1792816887956,"id":"1","progress":0.5161655198416439,"total":207,"current":82}
+{"_e":"metro:bundling:progress","_t":1792816888055,"id":"1","progress":0.5161655198416439,"total":233,"current":102}
+{"_e":"metro:bundling:progress","_t":1792816888157,"id":"1","progress":0.5161655198416439,"total":271,"current":116}
+{"_e":"metro:bundling:progress","_t":1792816888256,"id":"1","progress":0.5161655198416439,"total":276,"current":121}
+{"_e":"metro:bundling:progress","_t":1792816888356,"id":"1","progress":0.5161655198416439,"total":294,"current":139}
+{"_e":"metro:bundling:progress","_t":1792816888457,"id":"1","progress":0.5161655198416439,"total":335,"current":173}
+{"_e":"metro:bundling:progress","_t":1792816888557,"id":"1","progress":0.5161655198416439,"total":354,"current":203}
+{"_e":"metro:bundling:progress","_t":1792816888660,"id":"1","progress":0.5161655198416439,"total":371,"current":222}
+{"_e":"metro:bundling:progress","_t":1792816888760,"id":"1","progress":0.5161655198416439,"total":428,"current":252}
+{"_e":"metro:bundling:progress","_t":1792816888860,"id":"1","progress":0.5161655198416439,"total":466,"current":289}
+{"_e":"metro:bundling:progress","_t":1792816888961,"id":"1","progress":0.5161655198416439,"total":504,"current":322}
+{"_e":"metro:bundling:progress","_t":1792816889065,"id":"1","progress":0.5161655198416439,"total":543,"current":354}
+{"_e":"metro:bundling:progress","_t":1792816889166,"id":"1","progress":0.5161655198416439,"total":566,"current":400}
+{"_e":"metro:bundling:progress","_t":1792816889269,"id":"1","progress":0.5382819050318253,"total":582,"current":427}
+{"_e":"metro:bundling:progress","_t":1792816889369,"id":"1","progress":0.5644051637506764,"total":591,"current":444}
+{"_e":"metro:bundling:progress","_t":1792816889469,"id":"1","progress":0.6130445567320046,"total":599,"current":469}
+{"_e":"metro:bundling:progress","_t":1792816889573,"id":"1","progress":0.6596543890742003,"total":607,"current":493}
+{"_e":"metro:bundling:progress","_t":1792816889675,"id":"1","progress":0.6895169393544749,"total":619,"current":514}
+{"_e":"metro:bundling:progress","_t":1792816889776,"id":"1","progress":0.7256515775034293,"total":621,"current":529}
+{"_e":"metro:bundling:progress","_t":1792816889875,"id":"1","progress":0.7785467128027681,"total":629,"current":555}
+{"_e":"metro:bundling:progress","_t":1792816889975,"id":"1","progress":0.8066179577637798,"total":638,"current":573}
+{"_e":"metro:bundling:progress","_t":1792816890076,"id":"1","progress":0.8375022956841138,"total":660,"current":604}
+{"_e":"metro:bundling:progress","_t":1792816890176,"id":"1","progress":0.8727860559789615,"total":669,"current":625}
+{"_e":"metro:bundling:progress","_t":1792816890279,"id":"1","progress":0.9191096492373021,"total":678,"current":650}
+{"_e":"metro:bundling:progress","_t":1792816890379,"id":"1","progress":0.9428691451375761,"total":690,"current":670}
+{"_e":"metro:bundling:progress","_t":1792816890493,"id":"1","progress":0.9546801750396139,"total":698,"current":682}
+{"_e":"metro:bundling:progress","_t":1792816890593,"id":"1","progress":0.9914469387755102,"total":700,"current":697}
+{"_e":"metro:bundling:progress","_t":1792816890706,"id":"1","progress":0.9942938775510204,"total":700,"current":698}
+{"_e":"metro:bundling:progress","_t":1792816890959,"id":"1","progress":0.9971448979591836,"total":700,"current":699}
+{"_e":"metro:bundling:progress","_t":1792816891059,"id":"1","progress":0.9971890386353881,"total":711,"current":710}
+{"_e":"metro:bundling:progress","_t":1792816891167,"id":"1","progress":0.999,"total":711,"current":711}
+{"_e":"metro:bundling:progress","_t":1792816891268,"id":"1","progress":0.999,"total":714,"current":714}
+{"_e":"metro:bundling:done","_t":1792816891356,"id":"1","total":714,"ms":4641.213166}
+{"_e":"metro:client_log","_t":1792816891735,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792816906858,"level":"error","data":["[GHA-MOBILE] Session restore failed:","[Error: Gateway request timed out after 15 seconds (/api/v1/auth/session)]"]}
+{"_e":"metro:client_log","_t":1792817023768,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792817023777,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:bundling:started","_t":1792817960914,"id":"5","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792817960915,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792817960981,"id":"5","total":1,"ms":65.796167}
+{"_e":"metro:client_log","_t":1792817961268,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792817966444,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792817966446,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:bundling:started","_t":1792818014619,"id":"8","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792818014619,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792818014660,"id":"8","total":1,"ms":40.529166}
+{"_e":"metro:client_log","_t":1792818014910,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:bundling:started","_t":1792818020435,"id":"9","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792818020436,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792818020484,"id":"9","total":1,"ms":48.549542}
+{"_e":"metro:client_log","_t":1792818020730,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792818178244,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792818178247,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:client_log","_t":1792818759370,"level":"error","data":["Project is incompatible with this version of Expo Go\n\n• The installed version of Expo Go is for SDK 58.0.0.\n• The project you opened uses SDK 57.\n\nHow to fix this error:\n\nEither upgrade this project to SDK 58.0.0, or launch it in an iOS simulator. It is not possible to install an older version of Expo Go for iOS devices, only the latest version is supported.\n\n[Learn how to upgrade to SDK 58.](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)\n\n[https://expo.dev/go?sdkVersion=57&platform=ios&device=false](Learn how to install Expo Go for SDK 57 in an iOS Simulator.)"]}
+{"_e":"metro:client_log","_t":1792819135664,"level":"error","data":["Project is incompatible with this version of Expo Go\n\n• The installed version of Expo Go is for SDK 58.0.0.\n• The project you opened uses SDK 57.\n\nHow to fix this error:\n\nEither upgrade this project to SDK 58.0.0, or launch it in an iOS simulator. It is not possible to install an older version of Expo Go for iOS devices, only the latest version is supported.\n\n[Learn how to upgrade to SDK 58.](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)\n\n[https://expo.dev/go?sdkVersion=57&platform=ios&device=false](Learn how to install Expo Go for SDK 57 in an iOS Simulator.)"]}
+{"_e":"metro:client_log","_t":1792819168007,"level":"error","data":["Project is incompatible with this version of Expo Go\n\n• The installed version of Expo Go is for SDK 58.0.0.\n• The project you opened uses SDK 57.\n\nHow to fix this error:\n\nEither upgrade this project to SDK 58.0.0, or launch it in an iOS simulator. It is not possible to install an older version of Expo Go for iOS devices, only the latest version is supported.\n\n[Learn how to upgrade to SDK 58.](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)\n\n[https://expo.dev/go?sdkVersion=57&platform=ios&device=false](Learn how to install Expo Go for SDK 57 in an iOS Simulator.)"]}
+{"_e":"metro:client_log","_t":1792819336963,"level":"error","data":["Project is incompatible with this version of Expo Go\n\n• The installed version of Expo Go is for SDK 58.0.0.\n• The project you opened uses SDK 57.\n\nHow to fix this error:\n\nEither upgrade this project to SDK 58.0.0, or launch it in an iOS simulator. It is not possible to install an older version of Expo Go for iOS devices, only the latest version is supported.\n\n[Learn how to upgrade to SDK 58.](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)\n\n[https://expo.dev/go?sdkVersion=57&platform=ios&device=false](Learn how to install Expo Go for SDK 57 in an iOS Simulator.)"]}
+{"_e":"metro:client_log","_t":1792819468785,"level":"error","data":["Project is incompatible with this version of Expo Go\n\n• The installed version of Expo Go is for SDK 58.0.0.\n• The project you opened uses SDK 57.\n\nHow to fix this error:\n\nEither upgrade this project to SDK 58.0.0, or launch it in an iOS simulator. It is not possible to install an older version of Expo Go for iOS devices, only the latest version is supported.\n\n[Learn how to upgrade to SDK 58.](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)\n\n[https://expo.dev/go?sdkVersion=57&platform=ios&device=false](Learn how to install Expo Go for SDK 57 in an iOS Simulator.)"]}
+{"_e":"metro:client_log","_t":1792819758916,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792819758919,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:client_log","_t":1792819859094,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792819859094,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:client_log","_t":1792820174267,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792820174269,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:bundling:started","_t":1792820597765,"id":"c","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792820597767,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792820597864,"id":"c","total":1,"ms":97.922042}
+{"_e":"metro:client_log","_t":1792820598197,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792820666232,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: Gateway error (500) creating LearnWorlds SSO login]"]}
+{"_e":"metro:client_log","_t":1792820666236,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"root:init","_t":1792820886712,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792820886713,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792820886714,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.241:8080","EXPO_PUBLIC_LEARNWORLDS_REGISTRATION_URL":"https://courses.globalhealthcareacademy.in/home"}}
+{"_e":"devserver:start","_t":1792820886865,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792820887059,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792820887146,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792820887380,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1792820932745,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792820932746,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792820932753,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792820933124,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1792820933229,"id":"1","progress":0.18367346938775508,"total":14,"current":6}
+{"_e":"metro:bundling:progress","_t":1792820933288,"id":"1","progress":0.25,"total":14,"current":7}
+{"_e":"metro:bundling:progress","_t":1792820933389,"id":"1","progress":0.25,"total":44,"current":19}
+{"_e":"metro:bundling:progress","_t":1792820933492,"id":"1","progress":0.3770390889504463,"total":57,"current":35}
+{"_e":"metro:bundling:progress","_t":1792820933595,"id":"1","progress":0.48849577985894327,"total":93,"current":65}
+{"_e":"metro:bundling:progress","_t":1792820933695,"id":"1","progress":0.48849577985894327,"total":132,"current":85}
+{"_e":"metro:bundling:progress","_t":1792820933796,"id":"1","progress":0.48849577985894327,"total":263,"current":121}
+{"_e":"metro:bundling:progress","_t":1792820933897,"id":"1","progress":0.48849577985894327,"total":294,"current":149}
+{"_e":"metro:bundling:progress","_t":1792820933997,"id":"1","progress":0.48849577985894327,"total":338,"current":186}
+{"_e":"metro:bundling:progress","_t":1792820934098,"id":"1","progress":0.48849577985894327,"total":391,"current":243}
+{"_e":"metro:bundling:progress","_t":1792820934199,"id":"1","progress":0.48849577985894327,"total":458,"current":311}
+{"_e":"metro:bundling:progress","_t":1792820934299,"id":"1","progress":0.48849577985894327,"total":550,"current":381}
+{"_e":"metro:bundling:progress","_t":1792820934399,"id":"1","progress":0.5490733739544381,"total":583,"current":432}
+{"_e":"metro:bundling:progress","_t":1792820934500,"id":"1","progress":0.6502766157648313,"total":594,"current":479}
+{"_e":"metro:bundling:progress","_t":1792820934600,"id":"1","progress":0.765625,"total":624,"current":546}
+{"_e":"metro:bundling:progress","_t":1792820934700,"id":"1","progress":0.8494552867973412,"total":651,"current":600}
+{"_e":"metro:bundling:progress","_t":1792820934800,"id":"1","progress":0.9165246539792389,"total":680,"current":651}
+{"_e":"metro:bundling:progress","_t":1792820934900,"id":"1","progress":0.9800716740244084,"total":699,"current":692}
+{"_e":"metro:bundling:progress","_t":1792820935000,"id":"1","progress":0.9942938775510204,"total":700,"current":698}
+{"_e":"metro:bundling:progress","_t":1792820935180,"id":"1","progress":0.9971448979591836,"total":700,"current":699}
+{"_e":"metro:bundling:progress","_t":1792820935303,"id":"1","progress":0.999,"total":711,"current":711}
+{"_e":"metro:bundling:progress","_t":1792820935404,"id":"1","progress":0.999,"total":714,"current":714}
+{"_e":"metro:bundling:done","_t":1792820935472,"id":"1","total":714,"ms":2725.602875}
+{"_e":"metro:client_log","_t":1792820935748,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:server_log","_t":1792821556164,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17","60"]}
+{"_e":"metro:server_log","_t":1792821556796,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792822697718,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17","60"]}
+{"_e":"metro:server_log","_t":1792822697816,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792823976009,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17","60"]}
+{"_e":"metro:server_log","_t":1792823976206,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792824247356,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792824247377,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17","60"]}
+{"_e":"metro:server_log","_t":1792824539794,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17","60"]}
+{"_e":"metro:server_log","_t":1792824539827,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792826377275,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792826377366,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17","60"]}
+{"_e":"root:init","_t":1792957227725,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792957227726,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792957227727,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.241:8080","EXPO_PUBLIC_LEARNWORLDS_REGISTRATION_URL":"https://courses.globalhealthcareacademy.in/home"}}
+{"_e":"devserver:start","_t":1792957227864,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792957228073,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792957228198,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792957228415,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1792957233201,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792957233202,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792957233205,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792957233435,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1792957233536,"id":"1","progress":0.25,"total":14,"current":7}
+{"_e":"metro:bundling:progress","_t":1792957233623,"id":"1","progress":0.32653061224489793,"total":14,"current":8}
+{"_e":"metro:bundling:progress","_t":1792957233745,"id":"1","progress":0.41326530612244905,"total":14,"current":9}
+{"_e":"metro:bundling:progress","_t":1792957233845,"id":"1","progress":0.41326530612244905,"total":92,"current":40}
+{"_e":"metro:bundling:progress","_t":1792957233945,"id":"1","progress":0.41326530612244905,"total":208,"current":89}
+{"_e":"metro:bundling:progress","_t":1792957234045,"id":"1","progress":0.41326530612244905,"total":238,"current":111}
+{"_e":"metro:bundling:progress","_t":1792957234146,"id":"1","progress":0.41326530612244905,"total":290,"current":155}
+{"_e":"metro:bundling:progress","_t":1792957234246,"id":"1","progress":0.41326530612244905,"total":363,"current":218}
+{"_e":"metro:bundling:progress","_t":1792957234346,"id":"1","progress":0.4392188056247775,"total":424,"current":281}
+{"_e":"metro:bundling:progress","_t":1792957234446,"id":"1","progress":0.44190839002267573,"total":525,"current":349}
+{"_e":"metro:bundling:progress","_t":1792957234546,"id":"1","progress":0.47776141099568414,"total":557,"current":385}
+{"_e":"metro:bundling:progress","_t":1792957234646,"id":"1","progress":0.6022821243334064,"total":585,"current":454}
+{"_e":"metro:bundling:progress","_t":1792957234746,"id":"1","progress":0.7216749929305306,"total":618,"current":525}
+{"_e":"metro:bundling:progress","_t":1792957234846,"id":"1","progress":0.8239053254437869,"total":650,"current":590}
+{"_e":"metro:bundling:progress","_t":1792957234946,"id":"1","progress":0.876827229438745,"total":676,"current":633}
+{"_e":"metro:bundling:progress","_t":1792957235047,"id":"1","progress":0.948580152927551,"total":691,"current":673}
+{"_e":"metro:bundling:progress","_t":1792957235148,"id":"1","progress":0.9942938775510204,"total":700,"current":698}
+{"_e":"metro:bundling:progress","_t":1792957235443,"id":"1","progress":0.9971448979591836,"total":700,"current":699}
+{"_e":"metro:bundling:progress","_t":1792957235544,"id":"1","progress":0.999,"total":714,"current":714}
+{"_e":"metro:bundling:done","_t":1792957235637,"id":"1","total":714,"ms":2435.059625}
+{"_e":"metro:client_log","_t":1792957235937,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:server_log","_t":1792959011103,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792960063867,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792962107837,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792964125066,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792965482895,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792966505955,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792968537935,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792970511924,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792972334847,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792973385865,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792975218003,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792977152869,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792979101065,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792980392964,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792982333846,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792984244898,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792986300894,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792987285384,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792990369899,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792992386772,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1792994366206,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:client_log","_t":1792995668713,"level":"error","data":["[GHA-MOBILE] Session restore failed:","[Error: Gateway request timed out after 15 seconds (/api/v1/auth/session)]"]}
+{"_e":"metro:client_log","_t":1792995669734,"level":"error","data":["[GHA-MOBILE] Session restore failed:","[Error: Gateway request timed out after 15 seconds (/api/v1/auth/session)]"]}
+{"_e":"root:init","_t":1792996162696,"format":"v0-jsonl","version":"57.0.32"}
+{"_e":"env:mode","_t":1792996162697,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1792996162698,"mode":"development","files":["../../../.env"],"env":{"EXPO_PUBLIC_GHA_GATEWAY_URL":"http://192.168.1.12:8080","EXPO_PUBLIC_LEARNWORLDS_REGISTRATION_URL":"https://courses.globalhealthcareacademy.in/home"}}
+{"_e":"devserver:start","_t":1792996162840,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1792996163038,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1792996163133,"plugins":[]}
+{"_e":"metro:instantiate","_t":1792996163376,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1792996363222,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792996363223,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792996363227,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1792996363565,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1792996363666,"id":"1","progress":0.18367346938775508,"total":14,"current":6}
+{"_e":"metro:bundling:progress","_t":1792996363814,"id":"1","progress":0.32653061224489793,"total":14,"current":8}
+{"_e":"metro:bundling:progress","_t":1792996363874,"id":"1","progress":0.41326530612244905,"total":14,"current":9}
+{"_e":"metro:bundling:progress","_t":1792996363974,"id":"1","progress":0.41326530612244905,"total":180,"current":35}
+{"_e":"metro:bundling:progress","_t":1792996364074,"id":"1","progress":0.41326530612244905,"total":207,"current":76}
+{"_e":"metro:bundling:progress","_t":1792996364174,"id":"1","progress":0.41326530612244905,"total":236,"current":102}
+{"_e":"metro:bundling:progress","_t":1792996364277,"id":"1","progress":0.41326530612244905,"total":290,"current":149}
+{"_e":"metro:bundling:progress","_t":1792996364377,"id":"1","progress":0.41326530612244905,"total":349,"current":212}
+{"_e":"metro:bundling:progress","_t":1792996364477,"id":"1","progress":0.4188630011354703,"total":428,"current":277}
+{"_e":"metro:bundling:progress","_t":1792996364577,"id":"1","progress":0.4277060532897686,"total":526,"current":344}
+{"_e":"metro:bundling:progress","_t":1792996364679,"id":"1","progress":0.47511479591836736,"total":560,"current":386}
+{"_e":"metro:bundling:progress","_t":1792996364780,"id":"1","progress":0.6280832060715442,"total":588,"current":466}
+{"_e":"metro:bundling:progress","_t":1792996364880,"id":"1","progress":0.7315474405765036,"total":622,"current":532}
+{"_e":"metro:bundling:progress","_t":1792996364980,"id":"1","progress":0.8299992472430275,"total":652,"current":594}
+{"_e":"metro:bundling:progress","_t":1792996365080,"id":"1","progress":0.8745968362900479,"total":679,"current":635}
+{"_e":"metro:bundling:progress","_t":1792996365180,"id":"1","progress":0.962727312709825,"total":691,"current":678}
+{"_e":"metro:bundling:progress","_t":1792996365280,"id":"1","progress":0.9942938775510204,"total":700,"current":698}
+{"_e":"metro:bundling:progress","_t":1792996365498,"id":"1","progress":0.9971448979591836,"total":700,"current":699}
+{"_e":"metro:bundling:progress","_t":1792996365599,"id":"1","progress":0.999,"total":714,"current":714}
+{"_e":"metro:bundling:done","_t":1792996365662,"id":"1","total":714,"ms":2439.870875}
+{"_e":"metro:client_log","_t":1792996365895,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:bundling:started","_t":1792996394694,"id":"2","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1792996394694,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1792996394750,"id":"2","total":1,"ms":55.465333}
+{"_e":"metro:client_log","_t":1792996395060,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1792996465720,"level":"error","data":["[GHA-MOBILE] Could not load published Conference landing sections:","[Error: Gateway error (500): Failed to load published landing sections]"]}
+{"_e":"metro:client_log","_t":1792996513813,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: LearnWorlds returned no SSO login URL]"]}
+{"_e":"metro:client_log","_t":1792996513814,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:client_log","_t":1792996783632,"level":"error","data":["[GHA-MOBILE] LearnWorlds SSO connection failed:","[Error: LearnWorlds returned no SSO login URL]"]}
+{"_e":"metro:client_log","_t":1792996783643,"level":"info","data":["[GHA-MOBILE] Opening LearnWorlds learner registration fallback:","https://courses.globalhealthcareacademy.in/home"]}
+{"_e":"metro:client_log","_t":1792997158777,"level":"error","data":["[GHA-MOBILE] Could not load published GHASTEP landing sections:","[Error: Gateway error (400): Failed to load published landing sections]"]}
+{"_e":"metro:client_log","_t":1792997325694,"level":"error","data":["[GHA-MOBILE] Could not load published GHASTEP landing sections:","[Error: Gateway error (400): Failed to load published landing sections]"]}
+{"_e":"metro:client_log","_t":1792997350338,"level":"error","data":["[GHA-MOBILE] Could not load published GMEDKONNECT landing sections:","[Error: Gateway error (400): Failed to load published landing sections]"]}
+{"_e":"metro:client_log","_t":1792997376417,"level":"error","data":["[GHA-MOBILE] Could not load published GMEDKONNECT landing sections:","[Error: Gateway error (400): Failed to load published landing sections]"]}
+{"_e":"metro:client_log","_t":1792997383104,"level":"error","data":["[GHA-MOBILE] Could not load published GMEDKONNECT landing sections:","[Error: Gateway error (400): Failed to load published landing sections]"]}

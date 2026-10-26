@@ -1,9 +1,12 @@
 import { getGatewayBaseUrl } from './gatewayConfig';
 
-export type LandingCategory = 'CME' | 'GSI' | 'AHS' | 'Conference';
+export type LandingCategory = 'CME' | 'GSI' | 'AHS' | 'Conference' | 'GHASTEP' | 'GMEDKONNECT';
 
 export interface SectionImageAsset {
   blobPath: string;
+  title?: string;
+  description?: string;
+  url?: string;
   previewUrl?: string;
   fileName: string;
   mimeType: string;

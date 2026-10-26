@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   Modal,
@@ -22,6 +22,7 @@ interface LoginScreenProps {
 
 export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
   const [requestedMobile, setRequestedMobile] = useState('');
   const [country, setCountry] = useState<Country>(COUNTRIES.find((item) => item.code === 'IN') || COUNTRIES[0]);
@@ -31,6 +32,8 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
   const [otpRequested, setOtpRequested] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const emailInputRef = useRef<TextInput>(null);
+  const mobileInputRef = useRef<TextInput>(null);
 
   const filteredCountries = useMemo(() => {
     const query = countrySearch.trim().toLocaleLowerCase();
@@ -42,6 +45,8 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
   const requestOtp = async () => {
     setError('');
     if (!name.trim()) return setError('Enter your name.');
+    const normalizedEmail = email.trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) return setError('Enter a valid email address.');
     const enteredNumber = mobile.replace(/[\s()-]/g, '');
     const callingCode = COUNTRY_CALLING_CODES[country.code];
     const normalizedMobile = enteredNumber.startsWith('+')
@@ -58,6 +63,7 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
     try {
       await userGatewayClient.requestOtp({
         name: name.trim(),
+        email: normalizedEmail,
         mobile: normalizedMobile,
         countryCode: country.code,
         country: country.name,
@@ -90,7 +96,7 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
       <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
         <View style={styles.brandMark}><Text style={styles.brandMarkText}>GHA</Text></View>
         <Text style={styles.title}>Welcome to GHA</Text>
-        <Text style={styles.subtitle}>Sign in with your mobile number to continue.</Text>
+        <Text style={styles.subtitle}>Enter your details to continue. We’ll send a verification code to your mobile.</Text>
 
         {!otpRequested ? (
           <>
@@ -104,6 +110,29 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
               returnKeyType="next"
             />
 
+            <TouchableOpacity
+              onPress={() => emailInputRef.current?.focus()}
+              accessibilityRole="button"
+              accessibilityLabel="Focus email address field"
+              style={styles.labelTapArea}
+            >
+              <Text style={styles.label}>Email address</Text>
+            </TouchableOpacity>
+            <TextInput
+              ref={emailInputRef}
+              value={email}
+              onChangeText={setEmail}
+              placeholder="you@example.com"
+              autoCapitalize="none"
+              autoCorrect={false}
+              keyboardType="email-address"
+              autoComplete="email"
+              textContentType="emailAddress"
+              style={styles.input}
+              returnKeyType="next"
+              onSubmitEditing={() => mobileInputRef.current?.focus()}
+            />
+
             <Text style={styles.label}>Country</Text>
             <TouchableOpacity style={styles.countryButton} onPress={() => setCountryModalVisible(true)}>
               <Text style={styles.countryName}>{country.name}</Text>
@@ -114,6 +143,7 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
             <View style={styles.phoneInput}>
               <Text style={styles.phonePrefix}>+{COUNTRY_CALLING_CODES[country.code] || '…'}</Text>
               <TextInput
+                ref={mobileInputRef}
                 value={mobile}
                 onChangeText={setMobile}
                 placeholder="98765 43210"
@@ -121,9 +151,10 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
                 autoComplete="tel"
                 textContentType="telephoneNumber"
                 style={styles.phoneNumberInput}
+                returnKeyType="done"
               />
             </View>
-            <Text style={styles.hint}>The selected country’s calling code is added automatically. During development, the verification code appears in the notification-service logs.</Text>
+            <Text style={styles.hint}>The selected country’s calling code is added automatically. The verification code is sent to your mobile; your email is saved with your profile.</Text>
 
             <TouchableOpacity disabled={busy} onPress={requestOtp} style={[styles.primaryButton, busy && styles.disabledButton]}>
               {busy ? <ActivityIndicator color="#ffffff" /> : <Text style={styles.primaryButtonText}>Send verification code</Text>}
@@ -200,6 +231,7 @@ const styles = StyleSheet.create({
   title: { color: '#0f172a', fontSize: 28, fontWeight: '800' },
   subtitle: { color: '#64748b', fontSize: 15, lineHeight: 22, marginTop: 7, marginBottom: 28 },
   label: { color: '#334155', fontSize: 13, fontWeight: '700', marginBottom: 7, marginTop: 14 },
+  labelTapArea: { alignSelf: 'flex-start' },
   input: { minHeight: 52, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 12, backgroundColor: '#ffffff', paddingHorizontal: 14, color: '#0f172a', fontSize: 16 },
   phoneInput: { minHeight: 52, borderWidth: 1, borderColor: '#cbd5e1', borderRadius: 12, backgroundColor: '#ffffff', paddingHorizontal: 14, flexDirection: 'row', alignItems: 'center' },
   phonePrefix: { color: '#0f172a', fontSize: 16, fontWeight: '700', paddingRight: 12, borderRightWidth: 1, borderRightColor: '#cbd5e1' },

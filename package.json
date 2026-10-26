@@ -9,16 +9,20 @@
     "ios": "expo start --ios"
   },
   "dependencies": {
-    "expo": "~52.0.0",
-    "expo-asset": "~11.0.5",
-    "expo-secure-store": "~14.0.1",
-    "expo-status-bar": "~2.0.0",
-    "react": "18.3.1",
-    "react-native": "0.76.3"
+    "expo": "~57.0.0",
+    "expo-asset": "~57.0.20",
+    "expo-secure-store": "~57.0.4",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3"
   },
   "devDependencies": {
-    "@types/react": "~18.3.12",
-    "typescript": "~5.3.3"
+    "@types/node": "^22.20.5",
+    "@types/react": "~19.2.4",
+    "typescript": "~6.0.3"
+  },
+  "engines": {
+    "node": ">=22.13.0"
   },
   "private": true
 }

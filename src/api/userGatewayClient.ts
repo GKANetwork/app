@@ -3,6 +3,7 @@ import { getGatewayBaseUrl } from './gatewayConfig';
 export interface AuthenticatedUser {
   id: string;
   name: string;
+  email: string;
   mobile: string;
   countryCode: string;
   country: string;
@@ -22,6 +23,7 @@ export class UserGatewayClient {
 
   async requestOtp(input: {
     name: string;
+    email: string;
     mobile: string;
     countryCode: string;
     country: string;
@@ -49,13 +51,27 @@ export class UserGatewayClient {
   }
 
   private async request<T = void>(path: string, init: RequestInit): Promise<T> {
-    const response = await fetch(`${this.gatewayBaseUrl}${path}`, {
-      ...init,
-      headers: {
-        Accept: 'application/json',
-        ...init.headers,
-      },
-    });
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    let response: Response;
+    try {
+      response = await fetch(`${this.gatewayBaseUrl}${path}`, {
+        ...init,
+        signal: init.signal || controller.signal,
+        headers: {
+          Accept: 'application/json',
+          ...init.headers,
+        },
+      });
+    } catch (error) {
+      if (controller.signal.aborted) {
+        throw new Error(`Gateway request timed out after 15 seconds (${path})`);
+      }
+      const reason = error instanceof Error ? error.message : String(error);
+      throw new Error(`Could not reach the GHA gateway (${path}): ${reason}`);
+    } finally {
+      clearTimeout(timeout);
+    }
     if (!response.ok) {
       let message = `Request failed (${response.status})`;
       try {
