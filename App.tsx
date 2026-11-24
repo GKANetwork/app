@@ -26,10 +26,10 @@ const landingLinks = [
   { name: 'GSI', uri: 'https://gtek4u.com/static/app-images/GSI.png', category: 'GSI' as const },
   { name: 'GHASTEP', uri: 'https://gtek4u.com/static/app-images/GHASTEP.png', category: 'GHASTEP' as const },
   { name: 'GMEDKONNECT', uri: 'https://gtek4u.com/static/app-images/GMEDKONNECT.png', category: 'GMEDKONNECT' as const },
-  { name: 'AHS', uri: 'https://gtek4u.com/static/app-images/AHS.png', category: 'AHS' as const },
 ];
 
 const categoryLabels: Record<LandingCategory, string> = {
+  LANDING_CONTENT: 'Landing Content',
   CME: 'CME',
   GSI: 'GSI',
   AHS: 'Course / AHS',
@@ -78,7 +78,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (!user || !selectedVertical) {
+    if (!user) {
       setPublishedSections([]);
       setSectionsLoading(false);
       setSectionsError('');
@@ -86,7 +86,7 @@ export default function App() {
     }
 
     let active = true;
-    const category = selectedVertical;
+    const category = selectedVertical || 'LANDING_CONTENT';
     setSectionsLoading(true);
     setSectionsError('');
     eventGateway.fetchPublishedLandingSections(category)
@@ -167,6 +167,49 @@ export default function App() {
       Alert.alert('Could not open link', message);
     }
   };
+
+  const renderPublishedSections = () => publishedSections.map((section) => {
+            const images = section.images?.length
+              ? section.images
+              : [{ blobPath: section.imageBlobPath, title: section.title, description: section.description, url: section.url, fileName: 'banner.jpg', mimeType: 'image/jpeg', sizeBytes: 0 }];
+
+            return (
+              <View key={section.id}>
+                {images.map((sectionImage, index) => {
+                  const imageUrl = sectionImage.url?.trim() || sectionImage.previewUrl?.trim() || section.url?.trim();
+                  const title = sectionImage.title?.trim() || section.title;
+                  const description = sectionImage.description?.trim() || section.description;
+                  const image = (
+                    <Image
+                      source={{ uri: eventGateway.resolveBlobImageUrl(sectionImage.blobPath) }}
+                      style={styles.eventCardImage}
+                      resizeMode="cover"
+                      onError={(event) => console.error(`[GHA-MOBILE] Failed to load published ${section.category} image:`, event.nativeEvent.error)}
+                    />
+                  );
+                  return (
+                    <View key={`${section.id}-image-${index}`} style={styles.eventCard}>
+                      {imageUrl ? (
+                        <TouchableOpacity activeOpacity={0.9} onPress={() => handleImagePressRedirect(imageUrl)}>
+                          {image}
+                        </TouchableOpacity>
+                      ) : image}
+                      <View style={styles.eventCardBody}>
+                        <Text style={styles.eventMeta}>{section.eventYear} · {categoryLabels[section.category] || section.category}</Text>
+                        <Text style={styles.eventTitle}>{title}</Text>
+                        <Text style={styles.eventDescription}>{description}</Text>
+                        {imageUrl ? (
+                          <TouchableOpacity onPress={() => handleImagePressRedirect(imageUrl)} style={styles.eventLink}>
+                            <Text style={styles.eventLinkText} numberOfLines={1}>{imageUrl}</Text>
+                          </TouchableOpacity>
+                        ) : null}
+                      </View>
+                    </View>
+                  );
+                })}
+              </View>
+            );
+          });
 
   if (!sessionReady) {
     return (
@@ -315,11 +358,11 @@ export default function App() {
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <View style={styles.headerCopy}>
-            <Text style={styles.headerTitle}>Global Health Academy</Text>
-            <Text style={styles.headerSubtitle}>{selectedVertical ? categoryLabels[selectedVertical] : 'Explore GHA programs and communities'}</Text>
+            <Text style={styles.headerTitle} numberOfLines={1} adjustsFontSizeToFit>Global Health Academy</Text>
+            <Text style={styles.headerSubtitle} numberOfLines={1} adjustsFontSizeToFit>{selectedVertical ? categoryLabels[selectedVertical] : 'Explore GHA programs and communities'}</Text>
           </View>
           <View style={styles.headerAccount}>
-            <Text style={styles.headerWelcome} numberOfLines={1}>{user.name}</Text>
+            <Text style={styles.headerWelcome} numberOfLines={1}>Welcome {user.name}</Text>
             <View style={styles.headerActions}>
               <TouchableOpacity
                 onPress={() => setActiveScreen('profile')}
@@ -379,6 +422,18 @@ export default function App() {
             </TouchableOpacity>
           );
           })}
+          <View style={styles.homePublishedContent}>
+            {sectionsLoading ? (
+              <ActivityIndicator size="large" color="#0f172a" />
+            ) : sectionsError ? (
+              <View style={styles.emptyState}>
+                <Text style={styles.emptyDescription}>Could not load landing content.</Text>
+                <TouchableOpacity style={styles.retryButton} onPress={() => setSectionsRetry((value) => value + 1)} accessibilityRole="button" accessibilityLabel="Retry loading landing content">
+                  <Text style={styles.retryButtonText}>Retry</Text>
+                </TouchableOpacity>
+              </View>
+            ) : renderPublishedSections()}
+          </View>
         </ScrollView>
       ) : (
         <ScrollView style={styles.eventFeed} contentContainerStyle={styles.eventFeedContent}>
@@ -404,48 +459,7 @@ export default function App() {
               <Text style={styles.emptyTitle}>Updates coming soon</Text>
               <Text style={styles.emptyDescription}>Do we visit shortly for new updates</Text>
             </View>
-          ) : publishedSections.map((section) => {
-            const images = section.images?.length
-              ? section.images
-              : [{ blobPath: section.imageBlobPath, title: section.title, description: section.description, url: section.url, fileName: 'banner.jpg', mimeType: 'image/jpeg', sizeBytes: 0 }];
-
-            return (
-              <View key={section.id}>
-                {images.map((sectionImage, index) => {
-                  const imageUrl = sectionImage.url?.trim() || sectionImage.previewUrl?.trim() || section.url?.trim();
-                  const title = sectionImage.title?.trim() || section.title;
-                  const description = sectionImage.description?.trim() || section.description;
-                  const image = (
-                    <Image
-                      source={{ uri: eventGateway.resolveBlobImageUrl(sectionImage.blobPath) }}
-                      style={styles.eventCardImage}
-                      resizeMode="cover"
-                      onError={(event) => console.error(`[GHA-MOBILE] Failed to load published ${section.category} image:`, event.nativeEvent.error)}
-                    />
-                  );
-                  return (
-                    <View key={`${section.id}-image-${index}`} style={styles.eventCard}>
-                      {imageUrl ? (
-                        <TouchableOpacity activeOpacity={0.9} onPress={() => handleImagePressRedirect(imageUrl)}>
-                          {image}
-                        </TouchableOpacity>
-                      ) : image}
-                      <View style={styles.eventCardBody}>
-                        <Text style={styles.eventMeta}>{section.eventYear} · {section.category === 'AHS' ? 'Course / AHS' : section.category}</Text>
-                        <Text style={styles.eventTitle}>{title}</Text>
-                        <Text style={styles.eventDescription}>{description}</Text>
-                        {imageUrl ? (
-                          <TouchableOpacity onPress={() => handleImagePressRedirect(imageUrl)} style={styles.eventLink}>
-                            <Text style={styles.eventLinkText} numberOfLines={1}>{imageUrl}</Text>
-                          </TouchableOpacity>
-                        ) : null}
-                      </View>
-                    </View>
-                  );
-                })}
-              </View>
-            );
-          })}
+          ) : renderPublishedSections()}
         </ScrollView>
       )}
 
@@ -465,13 +479,13 @@ function ProfileDetail({ label, value }: { label: string; value: string }) {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#f8fafc' },
   header: { backgroundColor: '#0f172a', paddingHorizontal: 20, paddingVertical: 16 },
-  headerRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  headerCopy: { flex: 1, paddingRight: 10 },
-  headerAccount: { alignItems: 'center', justifyContent: 'center', gap: 4, maxWidth: 160 },
+  headerRow: { gap: 12 },
+  headerCopy: { alignSelf: 'stretch', gap: 4 },
+  headerAccount: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
   headerActions: { alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 8 },
   headerTitle: { color: '#ffffff', fontSize: 18, fontWeight: '700' },
-  headerWelcome: { color: '#f8fafc', fontSize: 16, fontWeight: '700', maxWidth: 160 },
-  headerSubtitle: { color: '#cbd5e1', fontSize: 12, marginTop: 2 },
+  headerWelcome: { color: '#f8fafc', fontSize: 16, fontWeight: '700', flex: 1 },
+  headerSubtitle: { color: '#cbd5e1', fontSize: 12, fontWeight: '700' },
   profileButton: { width: 42, height: 42, borderRadius: 21, backgroundColor: '#1e293b', alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: '#64748b' },
   profileButtonIcon: { color: '#f8fafc', fontSize: 22, fontWeight: '700' },
   logoutButton: { width: 42, height: 42, alignItems: 'center', justifyContent: 'center', borderRadius: 21, borderWidth: 1, borderColor: '#64748b' },
@@ -483,6 +497,7 @@ const styles = StyleSheet.create({
   profileHeaderTitle: { color: '#ffffff', fontSize: 18, fontWeight: '700' },
   profileScroll: { flex: 1 },
   landingFeed: { flex: 1 },
+  homePublishedContent: { width: '100%' },
   eventFeed: { flex: 1 },
   eventFeedContent: { padding: 14, paddingBottom: 24 },
   landingContent: { paddingHorizontal: 12, paddingTop: 12, paddingBottom: 20, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', rowGap: 12 },

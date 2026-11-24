@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import type { TextInputInstance } from 'react-native';
 import { COUNTRIES } from '../data/countries';
 import type { Country } from '../data/countries';
 import { COUNTRY_CALLING_CODES } from '../data/countryCallingCodes';
@@ -32,8 +33,8 @@ export default function LoginScreen({ onAuthenticated }: LoginScreenProps) {
   const [otpRequested, setOtpRequested] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
-  const emailInputRef = useRef<TextInput>(null);
-  const mobileInputRef = useRef<TextInput>(null);
+  const emailInputRef = useRef<TextInputInstance>(null);
+  const mobileInputRef = useRef<TextInputInstance>(null);
 
   const filteredCountries = useMemo(() => {
     const query = countrySearch.trim().toLocaleLowerCase();
